@@ -22,6 +22,13 @@
   </head>
   <body style="background-color: lightblue">
     <a href="./index.html">Vrati se na početnu</a>
+    <form
+      action="https://www.google.com/"
+      method="POST"
+      enctype="multipart/form-data"
+      autocomplete="on"
+      oninput='cijenakarte.value=(parseInt(spol.value)+parseInt(prtljaga0.value)+parseInt(prtljaga1.value)+parseInt(prtljaga2.value));" kn košta vaša karta"'
+    >
     <header>
       <h1>Matija Batan CV</h1>
       <hr />
@@ -71,5 +78,78 @@
         <td>X</td>
       </tr>
     </table>
+    <br><br>
+    <label for="destinacija">Odaberite državu u koju želite putovati </label><br />
+      <input list="destinacija" name="destinacija" id="destinacija" />
+      <datalist id="destinacija">
+        <option value="SAD">SAD</option>
+        <option value="Francuska">Francuska</option>
+        <option value="Italija">Italija</option>
+        <option value="Japan">Japan</option>
+        <option value="UK">UK</option>
+        <option value="Portugal">Portugal</option>
+        <option value="Španjolska">Španjolska</option>
+        <option value="Brazil">Brazil</option>
+        </datalist
+      ><br /><br />
+
+      <legend>Osobni podatci:</legend>
+      <label for="Ime">Ime:</label><br />
+      
+      <input type="text" name="Ime" id="Ime" /><br>
+      <label for="Prezime">Prezime:</label><br />
+<input type="text" name="Prezime" id="Prezime" /><br />
+<label for="email">Unesite email:</label><br>
+        <input type="email" name="email" id="email" /><br />
+
+<p>Odaberite spol</p>
+        <input type="radio" name="spol" id="spol" value="70" />
+        <label for="spolMusko">Muško</label><br />
+        <input type="radio" name="spol" id="spol" value="50" />
+        <label for="spolZensko">Žensko</label><br />
+        <input type="radio" name="spol" id="spol" value="1000" />
+        <label for="spolZivotinja">Životinja</label>
+     
+      <br /><br />
+      <label for="dokumentCarina">Priložite sliku/scan dokumenta s kojim putujete:</label>
+      <input type="file" name="dokumentCarina" id="dokumentCarina" /><br />
+
+      <p>Odaberite prtljagu koju nosite?</p>
+      <input type="checkbox" id="prtljaga0" name="prtljaga0" value="0" checked/>
+      <label for="prtljaga0"> Bez kofera</label><br />
+      <input type="checkbox" id="prtljaga1" name="prtljaga1"  />
+      <label for="prtljaga1"> Mali kofer</label><br />
+      <input type="checkbox" id="prtljaga2" name="prtljaga" />
+      <label for="prtljaga2"> Veliki kofer</label><br />
+      <input type="checkbox" id="prtljaga3" name="prtljaga" value="7" />
+      <label for="prtljaga3"> Glazbeni instrument</label><br /><br /><br />
+  
+      <script>
+        if (prtljaga2.checked) {value="30"} else{value="0"}
+if (prtljaga1.checked) {value="20"} else{value="0"}
+
+      </script>
+     <!-- <script>
+        function myFunction() {
+          var prtljaga = document.forms[0];
+          var txt = "";
+          var i;
+          for (i = 0; i < prtljaga.length; i++) {
+            if (prtljaga[i].checked) {
+              txt = txt + prtljaga[i].value + " ";
+            }
+          }
+          document.getElementById("order").value = "You ordered a coffee with: " + txt;
+        }
+        </script>
+<input type="button" onclick="myFunction()" value="Izračunaj cijenu karte">
+<br><br>
+<input type="text" id="order" size="50">
+<input type="submit" value="Submit">-->
+      <input type="submit" value="Napravi rezervaciju" /><br>
+      <output name="cijenakarte" for="spol prtljaga1"></output><br />
+      <input type="submit" value="Kupi kartu" />
+      <cijenakarte.value=(parseInt(spol.value)+parseInt(prtljaga0.value)parseInt(prtljaga1.value)parseInt(prtljaga2.value))>
   </body>
 </html>
+ 
