@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forme</title>
+  </head>
+  <body>
+    <form
+      action="#"
+      method="get"
+      enctype="text/plain"
+      autocomplete="on"
+      target="_blank"
+      oninput="x.value=parseInt(a.value)+parseInt (b.value); umnozak.value=parseInt(faktor1.value) * parseInt(faktor2.value)"
+      form
+    >
+      <!--oninput="umnozak.value=parseInt(faktor1.value) + parseInt(faktor2.value)">-->
+      <fieldset>
+        <legend>Osobni podatci</legend>
+        <label for="ime"> Ime: </label><br />
+        <input type="text" name="ime" id="ime" /><br />
+        <label for="prezime">Prezime:</label><br />
+        <input type="text" name="prezime" id="prezime" /><br />
+        <label for="email">Email:</label><br />
+        <input type="text" name="email" id="email" /><br />
+        <input type="submit" value="Predaj" /><br />
+        <input type="radio" name="spol" id="spolM" value="M" />
+        <lable for="spolM">Muško</lable><br />
+        <input type="radio" name="spol" id="spolZ" value="Z" />
+        <lable for="spolM">Žensko</lable><br />
+      </fieldset>
+      <label for="auto">Koji auto voziš?</label><br />
+      <select id="auto" name="auto">
+        <optgroup label="ostali">
+          <option value="volvo">Volvo</option>
+          <option value="bmw">BMW</option>
+        </optgroup>
+        <optgroup label="francuski">
+          <option value="renoult">Renoult</option>
+          <option value="peugeot">Peugeot</option>
+        </optgroup></select
+      ><br />
+      <textarea name="poruka" rows="10" cols="30">Ovdje nešto piše</textarea
+      ><br />
+      <textarea
+        name="css"
+        style="width: 200px; height: 200px; background-color: beige"
+      >
+css</textarea
+      >
+      <button type="button" onclick="alert('boook') ">Pritisni dugme</button>
+      0
+      <input type="range" id="a" name="a" value="50" />
+      100 +
+      <input type="number" id="b" name="b" value="50" />
+      =
+      <output name="x" for="a b"></output><br />
+      <br />
+      <p style="color: blue">Isprobaj množenje</p>
+      <input type="text" name="faktor1" id="faktor1" /> *
+      <input type="text" name="faktor2" id="faktor2" /> =
+      <output name="umnozak" for="faktor1 faktor2"></output><br />
+      <label for="upload">Odaberi datoteku:</label>
+      <input type="file" id="upload" name="upload" accept=".jpg,.png" /><br />
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta
+        adipisci expedita et pariatur blanditiis nesciunt doloribus recusandae
+        saepe quas maxime aliquid aliquam quidem, quos doloremque voluptatem
+        ipsum? Assumenda, porro rem. Lorem ipsum dolor sit, amet consectetur
+        adipisicing elit. Aliquid dolor magnam nesciunt a molestias nostrum,
+        iure cupiditate provident eos expedita optio! Animi, laboriosam? Eius
+        voluptates architecto ipsum placeat vero corrupti! Officiis harum
+        corrupti non odio aspernatur sunt quisquam at ducimus repellat magnam
+        ratione ullam fugiat maiores similique quos eveniet, placeat itaque
+        tenetur praesentium ea asperiores iure. Deserunt quae molestiae quasi!
+        Laborum vero recusandae rerum dolores, omnis at iusto qui voluptates
+        commodi maiores assumenda culpa accusamus tempore nostrum id quod
+        dolorem nesciunt est! Quas officiis praesentium repellat totam ducimus.
+        Reiciendis, saepe! Vero error recusandae, fuga facilis ratione omnis
+        maiores a quos laudantium sapiente aperiam quidem laboriosam amet
+        voluptatum maxime tempore incidunt iste enim culpa et distinctio
+        aspernatur explicabo nesciunt? Tempora, laborum! Assumenda aperiam
+        quisquam reprehenderit porro voluptatum harum nisi repudiandae
+        architecto at, fugit, eaque blanditiis vitae iste, ratione sequi beatae
+        vero incidunt. Porro ut doloremque voluptates a natus neque quaerat
+        necessitatibus? Quos autem unde beatae, quasi debitis possimus dolor
+        tenetur fugiat blanditiis soluta illo odio alias minus, ex maxime
+        nesciunt porro consequatur praesentium? Non illum tempore, officia
+        beatae inventore fuga magnam. Fugit fugiat id quaerat omnis, consectetur
+        sed cupiditate inventore explicabo earum rerum excepturi maiores unde
+        aperiam quisquam repudiandae ea eligendi quibusdam alias porro, soluta
+        ad, similique suscipit aliquid error? Ipsum. Sint ab nisi delectus
+        laudantium laborum tempora illum consequuntur dicta et dolorem quidem
+        necessitatibus, hic quibusdam nesciunt obcaecati harum praesentium ad
+        accusamus! Amet dolor iure dignissimos sit. Totam, eaque odit. Aliquid
+        tenetur illo natus a molestias, possimus labore est earum! Repudiandae
+        quae ipsa illo possimus, nobis tenetur, sint dolor facilis sapiente
+        velit qui aperiam officia ullam adipisci? Minima, qui quos. Sed
+        consectetur ipsa voluptatem blanditiis. Consequuntur placeat neque
+        molestiae sunt minima aliquam, in fugiat, natus debitis totam rem magni
+        suscipit! Voluptatum eligendi sapiente illo voluptate exercitationem
+        magni quaerat itaque autem.
+      </p>
+    </form>
+  </body>
+</html>
