@@ -1,0 +1,21 @@
+div{
+    animation: animacija1 2s alternate 0s infinite linear;
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+@keyframes animacija1{
+0% {background-color: rgb(255, 136, 0);
+width: 500px;
+top: 10px;
+}
+100% {background-color: #1f21c4;
+width: 70px;
+top: 100px;
+}
+}

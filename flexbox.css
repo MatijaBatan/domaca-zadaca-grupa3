@@ -1,0 +1,14 @@
+*{margin: 2px;
+box-sizing: border-box;
+}
+.wrapper{
+    border: 1px dashed blue;
+    padding: 5px;
+}
+
+.flex-container {
+display: flex;
+flex-flow: row wrap;
+justify-content: space-around;
+background-color: blue;
+}
